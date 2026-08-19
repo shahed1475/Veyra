@@ -1,0 +1,39 @@
+# Excluded projects (separate repos / vendored third-party, not part of Veyra)
+/vidgen/
+/avatar-gen/
+
+# Excluded work product (large binary footage/renders, not suited to plain git)
+/raw_footage/
+/cut_footage/
+/cut_footage_v3/
+/edited_output/
+/scratch_preview/
+/analysis/
+
+# Local Claude Code settings (machine-specific, not project config)
+/.claude/
+
+# refclone's preserved standalone history (moved aside, not tracked)
+refclone/.git-standalone-backup/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# refclone runtime data
+refclone/data/voices/*
+refclone/data/outputs/*
+!refclone/data/voices/.gitkeep
+!refclone/data/outputs/.gitkeep
+refclone/vendor/MuseTalk/
