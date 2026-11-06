@@ -9,22 +9,21 @@ Early-stage. The project has a planned architecture and a working FastAPI servic
 ## What exists today
 
 - A FastAPI service in `refclone/src/refclone` with a `/health` endpoint
-- - An API test in `refclone/tests`
-  - - Dependencies chosen for audio and voice work: pydub, numpy, torch and coqui-tts
-    - - Planning documents covering the design and implementation steps: `planforreferencevideo.md`, `planforreferencevideo-implementation.md` and `refclone/docs`
-     
-      - ## Run it locally
-     
-      - ```
-        cd refclone
-        pip install -r requirements.txt
-        uvicorn refclone.main:app --app-dir src --reload
-        pytest
-        ```
+- An API test in `refclone/tests`
+- Dependencies chosen for audio and voice work: pydub, numpy, torch and coqui-tts
+- Planning documents covering the design and implementation steps: `planforreferencevideo.md`, `planforreferencevideo-implementation.md` and `refclone/docs`
 
-        Then open http://127.0.0.1:8000/health
+## Run it locally
 
-        ## Stack
+```
+cd refclone
+pip install -r requirements.txt
+uvicorn refclone.main:app --app-dir src --reload
+pytest
+```
 
-        Python, FastAPI, Uvicorn, pytest, pydub, numpy, PyTorch, Coqui TTS.
-        
+Then open http://127.0.0.1:8000/health
+
+## Stack
+
+Python, FastAPI, Uvicorn, pytest, pydub, numpy, PyTorch, Coqui TTS.
